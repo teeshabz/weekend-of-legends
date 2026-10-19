@@ -52,7 +52,7 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .home-head h1 {
   margin: 0; text-align: center; font-family: var(--serif); font-weight: 400;
-  letter-spacing: -0.02em; font-size: clamp(44px, 9vw, 120px); line-height: 0.95;
+  letter-spacing: -0.02em; font-size: clamp(44px, 6vw, 80px); line-height: 0.95;
 }
 
 @keyframes drop {
@@ -147,7 +147,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* ---------- prompt ---------- */
 .prompt { position: relative; max-width: 1080px; margin: 0 auto; padding: 64px 72px; min-height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
 .prompt .topbar { font-size: 14px; border-bottom: 1px solid var(--ln); padding-bottom: 14px; }
-.portrait { position: absolute; top: 92px; right: 52px; width: 290px; height: 290px; transform: rotate(6deg); filter: drop-shadow(7px 8px 0 #3A342D); }
+.portrait { position: absolute; top: 132px; right: 52px; width: 290px; height: 290px; transform: rotate(6deg); filter: drop-shadow(7px 8px 0 #3A342D); }
 .theme-is { margin-top: 150px; font-size: 16px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mu); }
 .prompt h1 { position: relative; margin: 18px 0 0; font-family: var(--serif); font-weight: 400; font-size: 124px; line-height: 0.9; }
 .lede { position: relative; margin: 44px 0 0; font-size: 28px; line-height: 1.45; max-width: 780px; }
@@ -213,7 +213,7 @@ img { display: block; max-width: 100%; height: auto; }
 
   .prompt { padding: 54px 24px 40px; }
   .prompt .topbar { font-size: 10px; padding-bottom: 10px; }
-  .portrait { top: 96px; right: 18px; width: 150px; height: 150px; filter: drop-shadow(5px 6px 0 #3A342D); }
+  .portrait { top: 116px; right: 18px; width: 150px; height: 150px; filter: drop-shadow(5px 6px 0 #3A342D); }
   .theme-is { margin-top: 150px; font-size: 11px; }
   .prompt h1 { margin-top: 10px; font-size: 72px; }
   .lede { margin-top: 24px; font-size: 17px; }
@@ -238,3 +238,8 @@ br.m { display: none; }
 @media (max-width: 720px) { br.m { display: inline; } .foot .file { font-size: 10px; } }
 @media (max-width: 720px) { .home-head h1 { font-size: 44px; max-width: 300px; line-height: 0.98; } }
 .u-lite { text-decoration-color: rgba(241, 233, 218, 0.4); text-decoration-thickness: 1px; }
+
+.tb-right { display: flex; align-items: center; gap: 16px; }
+.home-stamp img { width: 52px; height: 52px; transform: rotate(6deg); transition: transform .2s cubic-bezier(.2,.8,.2,1), filter .2s ease; }
+.home-stamp:hover img, .home-stamp:focus-visible img { transform: rotate(0deg) translate(-2px, -3px) scale(1.06); filter: drop-shadow(4px 5px 0 #EC251F); }
+@media (max-width: 720px) { .tb-right { gap: 12px; } .home-stamp img { width: 40px; height: 40px; } }
