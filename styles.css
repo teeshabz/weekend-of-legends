@@ -237,3 +237,4 @@ br.m { display: none; }
 .foot .file { display: block; }
 @media (max-width: 720px) { br.m { display: inline; } .foot .file { font-size: 10px; } }
 @media (max-width: 720px) { .home-head h1 { font-size: 44px; max-width: 300px; line-height: 0.98; } }
+.u-lite { text-decoration-color: rgba(241, 233, 218, 0.4); text-decoration-thickness: 1px; }
