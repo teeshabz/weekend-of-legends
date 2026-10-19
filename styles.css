@@ -183,7 +183,7 @@ img { display: block; max-width: 100%; height: auto; }
   .st b { font-size: 18px; }
 
   .links { padding: 30px 18px 48px; gap: 24px; }
-  .links-head { flex-direction: column; align-items: flex-start; gap: 6px; padding-bottom: 10px; }
+  .links-head { gap: 10px; padding-bottom: 10px; }
   .links-head h2 { font-size: 12px; }
   .links-head p { font-size: 12px; }
   .pms { justify-content: center; gap: 26px 0; }
